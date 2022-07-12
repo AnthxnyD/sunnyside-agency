@@ -1,44 +1,41 @@
-@import @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
-  font-family: 'Open Sans', sans-serif;
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
-.bold{
+.bold {
   font-weight: 700;
 }
 
-.main-section{
+.main-section {
   display: grid;
-  height:100vh;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.4fr 2fr 1.2fr 0.5fr;
-  grid-template-areas:
-    'nav nav nav nav'
-    'main main main main'
-    'content1 content2 content3 content3'
-    'footer footer footer footer'
- 
+  text-align: center;
+  height: 100vh;
+  grid-template-columns: 16fr 16fr 0fr 0fr;
+  grid-template-rows: 0.4fr 800px 500px 500px 500px 50px;
+  grid-template-areas: "nav nav " "main main " "content1 content2 " "content4 content3 " "content5 content6 " "footer footer";
 }
+
 /* NAVBAR */
-nav{
+nav {
   background: #34B3F1;
   grid-area: nav;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.logo{
+
+.logo {
   padding: 15px;
   cursor: pointer;
 }
-.navbar{
+
+.navbar {
   display: flex;
   list-style: none;
   width: 70%;
@@ -47,20 +44,20 @@ nav{
   gap: 15px;
 }
 
-.navbar__item{
+.navbar__item {
   cursor: pointer;
   padding: 10px;
   background: #b47df4;
 }
 
 /* MAIN SECTION */
-
-main{
-    background-image: url("/sunnyside-agency/sunnyside-assets/orange-header.png");
-    background-position: center center;
-    grid-area: main;
+main {
+  background-image: url("/sunnyside-agency/sunnyside-assets/orange-header.png");
+  background-position: center center;
+  grid-area: main;
 }
-.banner{
+
+.banner {
   width: 100%;
   height: 100%;
   display: flex;
@@ -68,67 +65,106 @@ main{
   justify-content: center;
   flex-direction: column;
 }
-.banner__up{
+
+.banner__up {
   display: flex;
-  align-items: center;
+  text-align: center;
 }
-.banner__image{
-  width: 100vh;
+
+.banner__image {
+  width: 100%;
   margin-left: 50px;
- 
 }
-.banner__image img{
-  width: 100vh;
-  heigth: 100vj;
+
+.banner__title {
+  font-size: 2.5em;
+  color: white;
+  margin-right: 305px;
+  margin-bottom: 500px;
 }
-.banner__cta{
-  margin: 30px;
-}
-.banner__cta a{
-   padding: 15px 10px;
-   background: #5fdaff;
-   text-decoration: none;
+
+.banner__image img {
+  width: 100%;
 }
 
 /* SIDEBAR */
-
-.sidebar__title{
+.sidebar__title {
   padding: 15px;
   font-weight: bold;
 }
-.sidebar{
+
+.sidebar {
   list-style: none;
   padding: 15px;
 }
-.sidebar__item{
+
+.sidebar__item {
   padding: 10px;
   margin-top: 10px;
   background: #8d5acd;
   color: #fff;
   cursor: pointer;
 }
-.content-1{
-  background: #5ffff8;
+
+.content-1 {
+  background: #ffffff;
   grid-area: content3;
 }
-.content-2{
-  background: #5fdaff;
+
+.MYarticles {
+  padding-top: 55px;
+  margin: 90px;
+}
+.MYarticles h1 {
+  margin-bottom: 35px;
+}
+.MYarticles span {
+  text-align: left center;
+}
+.MYarticles h3 {
+  margin-top: 25px;
+}
+
+.content-2 {
+  background-image: url("/sunnyside-agency/sunnyside-assets/mae-mu-40NjbC-Q-cw-unsplash-1.jpg");
+  background-position: center;
   grid-area: content2;
 }
-.content-3{
-  background: #5fffbe;
+
+.content-3 {
+  background: #ffffff;
   grid-area: content1;
 }
-footer{
+
+.content-4 {
+  background-image: url("/sunnyside-agency/sunnyside-assets/mae-mu-40NjbC-Q-cw-unsplash.jpg");
+  background-position: center;
+  grid-area: content4;
+}
+
+.content-5 {
+  background-image: url("/sunnyside-agency/sunnyside-assets/cherry.png");
+  background-position: center;
+  width: 100%;
+  grid-area: content5;
+}
+
+.content-6 {
+  background-image: url("/sunnyside-agency/sunnyside-assets/mae-mu-vbAEHCrvXZ0-unsplash Copy.jpg");
+  background-position: center;
+  width: 100%;
+  grid-area: content6;
+}
+
+footer {
   background: #fabe64;
   grid-area: footer;
 }
 
-@media only screen and (max-width: 550px){
-  .main-section{
+@media only screen and (max-width: 550px) {
+  .main-section {
     grid-template-columns: 1fr;
     grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
-    grid-template-areas: 'nav' 'side' 'main' 'content1' 'content2' 'content3' 'footer'
+    grid-template-areas: "nav" "main" "content1" "content2" "content3" "content4" "footer";
   }
-}
-
+}/*# sourceMappingURL=style.css.map */
