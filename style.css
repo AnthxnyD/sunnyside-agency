@@ -45,11 +45,16 @@ nav {
 }
 .navbar .navbar__item {
   width: 10%;
+  padding-top: 17.7px;
+  padding-bottom: 17.7px;
 }
 .navbar .navbar__item--bouton {
   padding: 17.7px;
   border-radius: 35px;
   background-color: #fff;
+}
+.navbar .navbar__item--bouton:hover {
+  background-color: #A4def8;
 }
 
 .navbar2 {
@@ -220,11 +225,6 @@ main {
   flex-direction: row;
   width: 100%;
 }
-.content-8 .image-4, .content-8 .image-5, .content-8 .image-6, .content-8 .image-7 {
-  align-items: center center;
-  width: 25%;
-  height: 450px;
-}
 
 .content-9 {
   background-image: url("/sunnyside-agency/sunnyside-assets/mae-mu-vbAEHCrvXZ0-unsplash Copy.jpg");
@@ -327,10 +327,33 @@ footer .foot-nav {
   width: 75px;
 }
 
+@media only screen and (min-width: 551px) {
+  .image-4, .image-5, .image-6, .image-7 {
+    align-items: center center;
+    width: 25%;
+    height: 450px;
+  }
+}
 @media only screen and (max-width: 550px) {
   .main-section {
     grid-template-columns: 1fr;
     grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1fr;
     grid-template-areas: "nav" "main" "content1" "content2" "content3" "content4" "content5" "content6" "content7" "content8" "footer";
+  }
+
+  .testi-nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  .content-8 {
+    flex-wrap: wrap;
+  }
+
+  .image-4, .image-5, .image-6, .image-7 {
+    height: 450px;
+    width: 50%;
   }
 }/*# sourceMappingURL=style.css.map */
