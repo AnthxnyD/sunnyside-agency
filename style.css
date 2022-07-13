@@ -16,9 +16,9 @@ body {
   display: grid;
   text-align: center;
   height: 100vh;
-  grid-template-columns: 16fr 16fr 0fr 0fr;
-  grid-template-rows: 0.4fr 800px 500px 500px 500px 50px;
-  grid-template-areas: "nav nav " "main main " "content1 content2 " "content4 content3 " "content5 content6 " "footer footer";
+  grid-template-columns: 16fr 16fr 0fr 0fr 0fr;
+  grid-template-rows: 0.4fr 800px 670px 670px 670px 670px 400px 250px;
+  grid-template-areas: "nav nav" "main main " "content1 content2 " "content4 content3 " "content5 content6 " "content7 content7" "content8 content8" "footer footer";
 }
 
 /* NAVBAR */
@@ -43,11 +43,25 @@ nav {
   justify-content: flex-end;
   gap: 15px;
 }
+.navbar .navbar__item {
+  width: 10%;
+}
+.navbar .navbar__item--bouton {
+  padding: 17.7px;
+  border-radius: 35px;
+  background-color: #fff;
+}
+
+.navbar2 {
+  display: grid;
+  list-style: none;
+  width: 70%;
+}
 
 .navbar__item {
   cursor: pointer;
   padding: 10px;
-  background: #b47df4;
+  color: white;
 }
 
 /* MAIN SECTION */
@@ -67,7 +81,6 @@ main {
 }
 
 .banner__up {
-  display: flex;
   text-align: center;
 }
 
@@ -79,8 +92,7 @@ main {
 .banner__title {
   font-size: 2.5em;
   color: white;
-  margin-right: 305px;
-  margin-bottom: 500px;
+  margin: 0 auto 500px auto;
 }
 
 .banner__image img {
@@ -127,7 +139,9 @@ main {
 
 .content-2 {
   background-image: url("/sunnyside-agency/sunnyside-assets/mae-mu-40NjbC-Q-cw-unsplash-1.jpg");
-  background-position: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   grid-area: content2;
 }
 
@@ -138,27 +152,162 @@ main {
 
 .content-4 {
   background-image: url("/sunnyside-agency/sunnyside-assets/mae-mu-40NjbC-Q-cw-unsplash.jpg");
-  background-position: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   grid-area: content4;
 }
 
 .content-5 {
   background-image: url("/sunnyside-agency/sunnyside-assets/cherry.png");
-  background-position: center;
+  background-position: center center;
   width: 100%;
   grid-area: content5;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content-5 h1 {
+  margin-top: 450px;
+  margin-bottom: 35px;
 }
 
 .content-6 {
   background-image: url("/sunnyside-agency/sunnyside-assets/mae-mu-vbAEHCrvXZ0-unsplash Copy.jpg");
-  background-position: center;
+  background-position: center center;
   width: 100%;
   grid-area: content6;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content-6 h1 {
+  margin-top: 450px;
+  margin-bottom: 35px;
+}
+
+.content-7 {
+  background-color: white;
+  background-position: center;
+  width: 100%;
+  grid-area: content7;
+}
+.content-7 h1 {
+  color: gray;
+  margin-top: 100px;
+  margin-bottom: 35px;
+}
+
+.content-8 {
+  grid-area: content8;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.content-8 .image-4, .content-8 .image-5, .content-8 .image-6, .content-8 .image-7 {
+  align-items: center center;
+  width: 25%;
+  height: 450px;
+}
+
+.content-9 {
+  background-image: url("/sunnyside-agency/sunnyside-assets/mae-mu-vbAEHCrvXZ0-unsplash Copy.jpg");
+  background-position: center;
+  width: 100%;
+  grid-area: content9;
+}
+
+.image-4 {
+  background-image: url("/sunnyside-agency/sunnyside-assets/Bitmap-3.jpg");
+  background-position: 0px;
+  height: 650px;
+  width: 450px;
+  grid-area: image4;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-5 {
+  background-image: url("/sunnyside-agency/sunnyside-assets/Bitmap-6.jpg");
+  background-position: center;
+  height: 650px;
+  width: 450px;
+  grid-area: image5;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-6 {
+  background-image: url("/sunnyside-agency/sunnyside-assets/Bitmap-5.jpg");
+  background-position: center;
+  height: 650px;
+  width: 450px;
+  grid-area: image6;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-7 {
+  background-image: url("/sunnyside-agency/sunnyside-assets/Bitmap-4.jpg");
+  background-position: center;
+  height: 650px;
+  width: 450px;
+  grid-area: image7;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.testi-nav {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.testi-nav-element {
+  width: 25%;
+}
+
+.imageovale {
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+.test-name {
+  margin-top: 45px;
 }
 
 footer {
-  background: #fabe64;
+  background: #90D4C6;
   grid-area: footer;
+}
+footer .Logofooter {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  align-items: center;
+}
+footer .LOGOFOO {
+  margin-top: 75px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+footer .foot-nav {
+  align-items: center;
+  margin-top: 55px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Space {
+  width: 25px;
+}
+
+.Space2 {
+  width: 75px;
 }
 
 @media only screen and (max-width: 550px) {
