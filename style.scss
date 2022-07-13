@@ -19,7 +19,7 @@ body{
   
   height:100vh;
   grid-template-columns: 16fr 16fr 0fr 0fr 0fr ;
-  grid-template-rows: 0.4fr 800px 670px 670px 670px 670px 400px 250px;
+  grid-template-rows: 0.4fr 800px 600px 600px 670px 670px 400px 250px;
   grid-template-areas:
     'nav nav'
     'main main '
@@ -142,7 +142,7 @@ margin: 0 auto 500px auto;
   cursor: pointer;
 }
 .content-1{
-  
+    font-family: 'Fraunces 9pt Soft';
   background: #ffffff;
   grid-area: content3;
 }
@@ -169,16 +169,21 @@ margin: 0 auto 500px auto;
   background-position:center center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 600px;
   grid-area: content2;
+  margin: 0;
 }
 .content-3{
  
+    font-family: 'Fraunces 9pt Soft';
   background: #ffffff;
   grid-area: content1;
 }.content-4{
-
+    margin: 0;
+    
   background-image: url("/sunnyside-agency/sunnyside-assets/mae-mu-40NjbC-Q-cw-unsplash.jpg");
   background-position:center center;
+  height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
   grid-area: content4;
@@ -186,16 +191,21 @@ margin: 0 auto 500px auto;
 .content-5{
 
     background-image: url("/sunnyside-agency/sunnyside-assets/cherry.png");
-
+    
     background-position:center center;
     width: 100%;
     grid-area: content5;
     background-repeat: no-repeat;
     background-size: cover;
     h1{
-
+        font-family: 'Fraunces 9pt Soft';
         margin-top: 450px;
         margin-bottom: 35px;
+    }
+    a{
+        padding:50px;
+        font-family: 'Barlow';
+        font-style: normal;
     }
       
   }
@@ -213,6 +223,11 @@ margin: 0 auto 500px auto;
 
         margin-top: 450px;
         margin-bottom: 35px;
+    }
+    a{
+        padding:50px;
+        font-family: 'Barlow';
+        font-style: normal;
     }
   }
   .content-7{
@@ -328,12 +343,13 @@ footer{
   background: #90D4C6;
   grid-area: footer;
     .Logofooter{
-        margin-top: 20px;
+        margin-top: 50px;
         margin-bottom: 60px;
         align-items: center;
+        
     }
     .LOGOFOO{
-        margin-top: 75px;
+        margin-top: 55px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -362,8 +378,10 @@ width: 25px;
 @media only screen and (max-width: 550px){
   .main-section{
     grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
-    grid-template-areas: 'nav' 'main' 'content1' 'content2' 'content3' 'content4' 'footer'
+    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1.2fr  1fr;
+    grid-template-areas: 'nav' 'main' 'content1' 'content2' 'content3' 'content4' 'content5' 'content6' 'content7' 'content8' 'footer';
   }
 }
+
+
 
