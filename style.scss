@@ -111,17 +111,30 @@ main{
 .banner__image{
   width: 100%;
   margin-left: 50px;
- 
+   
+
+
+
 }
+
+
 .banner__title{
 font-size: 2.5em;
 color: white;
-margin: 0 auto 500px auto;
-
+margin: 0 auto 150px auto;
+font-family: 'Fraunces 9pt Soft';
+font-style: normal;
+font-weight: 900;
+font-size: 56px;
+line-height: 69px;
 
 }
 
-  
+.flechedown{
+
+    margin-bottom: 195px;
+
+}
 
 
 .banner__image img{
@@ -148,7 +161,25 @@ margin: 0 auto 500px auto;
   cursor: pointer;
 }
 .content-1{
-    font-family: 'Fraunces 9pt Soft';
+    h1{
+        font-family: 'Fraunces 9pt Soft';
+        font-size: 40px;
+        line-height: 49px;
+        letter-spacing: -0.285714px;    
+
+    }
+    h3{
+
+        font-family: 'Fraunces 9pt Soft';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 15px;
+        line-height: 25px
+        
+
+    } 
+    
+
   background: #ffffff;
   grid-area: content3;
 }
@@ -180,10 +211,25 @@ margin: 0 auto 500px auto;
   margin: 0;
 }
 .content-3{
- 
-    font-family: 'Fraunces 9pt Soft';
-  background: #ffffff;
-  grid-area: content1;
+    
+    h1{
+        font-family: 'Fraunces 9pt Soft';
+        font-size: 40px;
+        line-height: 49px;
+        letter-spacing: -0.285714px;    
+
+    }
+    h3{
+
+        font-family: 'Fraunces 9pt Soft';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 15px;
+        line-height: 25px
+        
+    }    
+    background: #ffffff;
+    grid-area: content1;
 }.content-4{
     margin: 0;
     
@@ -205,15 +251,23 @@ margin: 0 auto 500px auto;
     background-size: cover;
     h1{
         font-family: 'Fraunces 9pt Soft';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 35px;
         margin-top: 450px;
         margin-bottom: 35px;
     }
     a{
-        padding:50px;
+        padding-right:50px;
         font-family: 'Barlow';
         font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 27px;
+
     }
-      
+   
   }
 
 .content-6{
@@ -226,7 +280,11 @@ margin: 0 auto 500px auto;
     background-repeat: no-repeat;
     background-size: cover;
     h1{
-
+        font-family: 'Fraunces 9pt Soft';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 35px;
         margin-top: 450px;
         margin-bottom: 35px;
     }
@@ -234,6 +292,9 @@ margin: 0 auto 500px auto;
         padding:50px;
         font-family: 'Barlow';
         font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 27px;
     }
   }
   .content-7{
@@ -243,9 +304,15 @@ margin: 0 auto 500px auto;
     width: 100%;
 
     h1{
-        color:gray;
+        color:#A7AAAD;
         margin-top: 100px;
         margin-bottom: 35px;
+        font-family: 'Fraunces 9pt Soft';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 5px;
     }
    
     grid-area: content7;
@@ -338,6 +405,26 @@ margin-bottom: 70px;
 .test-name{
 
 margin-top: 45px;
+font-family: 'Fraunces 9pt Soft';
+font-style: normal;
+font-weight: 900;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+letter-spacing: -0.128571px;
+
+
+}
+.test-name2{
+
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.1px;
+
 
 }
 
